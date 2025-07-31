@@ -1,0 +1,190 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/item/[id]",
+      "regex": "^/item/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/item/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/admin/dashboard",
+      "regex": "^/admin/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/dashboard(?:/)?$"
+    },
+    {
+      "page": "/auth/forgot-password",
+      "regex": "^/auth/forgot\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/forgot\\-password(?:/)?$"
+    },
+    {
+      "page": "/auth/login",
+      "regex": "^/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/login(?:/)?$"
+    },
+    {
+      "page": "/auth/signup",
+      "regex": "^/auth/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/signup(?:/)?$"
+    },
+    {
+      "page": "/auth/verify-id",
+      "regex": "^/auth/verify\\-id(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/verify\\-id(?:/)?$"
+    },
+    {
+      "page": "/browse",
+      "regex": "^/browse(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/browse(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/faq",
+      "regex": "^/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq(?:/)?$"
+    },
+    {
+      "page": "/help",
+      "regex": "^/help(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/help(?:/)?$"
+    },
+    {
+      "page": "/how-it-works",
+      "regex": "^/how\\-it\\-works(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/how\\-it\\-works(?:/)?$"
+    },
+    {
+      "page": "/lender/dashboard",
+      "regex": "^/lender/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lender/dashboard(?:/)?$"
+    },
+    {
+      "page": "/list-item",
+      "regex": "^/list\\-item(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/list\\-item(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/renter/dashboard",
+      "regex": "^/renter/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/renter/dashboard(?:/)?$"
+    },
+    {
+      "page": "/renter/favorites",
+      "regex": "^/renter/favorites(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/renter/favorites(?:/)?$"
+    },
+    {
+      "page": "/renter/messages",
+      "regex": "^/renter/messages(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/renter/messages(?:/)?$"
+    },
+    {
+      "page": "/renter/payments",
+      "regex": "^/renter/payments(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/renter/payments(?:/)?$"
+    },
+    {
+      "page": "/renter/profile",
+      "regex": "^/renter/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/renter/profile(?:/)?$"
+    },
+    {
+      "page": "/renter/rentals",
+      "regex": "^/renter/rentals(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/renter/rentals(?:/)?$"
+    },
+    {
+      "page": "/renter/settings",
+      "regex": "^/renter/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/renter/settings(?:/)?$"
+    },
+    {
+      "page": "/terms",
+      "regex": "^/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
